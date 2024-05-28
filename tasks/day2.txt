@@ -1,0 +1,8 @@
+Make a login form such that it should ask user for their 
+a. name (string)
+b. age (int)
+c. gender (this should be dropdown [male/female/not prefer to disclose])
+d. hobby (paragraph)
+e. degree (this should be a button to choose degree between BCA, MBBS, BTech, MCA, BBA, LLB)
+
+
