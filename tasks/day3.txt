@@ -1,0 +1,2 @@
+make a table with 3 columns anime character name, is this anime chracter your fav or not, character photo
+there should be atleast 15 character and table must have a scroll bar 
