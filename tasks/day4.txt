@@ -1,0 +1,6 @@
+Make a question answer forum where only questions should appear and answer should appear only after, I am interested to see that answer.
+I have also attached look-alike image for reference.
+There has to be 3 buttons, 
+a. which will open the forum 
+b. which will increase like count
+c. which will decrease like count
