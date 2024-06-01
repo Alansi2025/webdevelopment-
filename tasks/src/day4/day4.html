@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Answer Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="button-container">
+        <button id="openForumButton">Open Forum</button>
+        <button id="likeButton">Like <span id="likeCount">0</span></button>
+        <button id="dislikeButton">Dislike <span id="dislikeCount">0</span></button>
+    </div>
+
+    <div id="forum" class="forum-container">
+        <h2>Question Answer Forum</h2>
+        <div class="question">
+            <p>What is the capital of France?</p>
+            <button class="show-answer-button">I am interested to see that answer</button>
+            <p class="answer">The capital of France is Paris.</p>
+        </div>
+       
+        <div class="question">
+            <p>What is the chemical symbol for water?</p>
+            <button class="show-answer-button">I am interested to see that answer</button>
+            <p class="answer">The chemical symbol for water is H<sub>2</sub>O.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('openForumButton').addEventListener('click', function() {
+            document.getElementById('forum').style.display = 'block';
+        });
+
+        document.querySelectorAll('.show-answer-button').forEach(button => {
+            button.addEventListener('click', function() {
+                this.nextElementSibling.style.display = 'block';
+            });
+        });
+
+        let likeCount = 0;
+        let dislikeCount = 0;
+
+        document.getElementById('likeButton').addEventListener('click', function() {
+            likeCount++;
+            document.getElementById('likeCount').innerText = likeCount;
+        });
+
+        document.getElementById('dislikeButton').addEventListener('click', function() {
+            dislikeCount++;
+            document.getElementById('dislikeCount').innerText = dislikeCount;
+        });
+    </script>
+</body>
+</html>
