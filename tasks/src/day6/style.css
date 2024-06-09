@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#drag-container, #drop-container {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 2px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+#drag-container {
+    border: 2px solid #4caf50;
+}
+
+#drop-container {
+    border: 2px dashed #2196f3;
+}
+
+#drag-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#drop-container.over {
+    border: 2px solid #ff5722;
+    background-color: #ffebee;
+}
